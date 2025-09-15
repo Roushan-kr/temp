@@ -1,0 +1,102 @@
+body {
+  background: #f7f9fc;
+  font-family: 'Segoe UI', 'Inter', Arial, sans-serif;
+  margin: 0;
+}
+
+.about-hero {
+  text-align: center;
+  padding: 3rem 1rem 2rem 1rem;
+  background: linear-gradient(90deg, #06d6a0 0%, #ffd166 100%);
+  border-radius: 0 0 2rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.about-hero h1 {
+  font-size: 2.3rem;
+  color: #073b4c;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.about-hero p {
+  font-size: 1.15rem;
+  color: #222;
+}
+
+.team-section {
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
+  padding: 1rem;
+}
+
+.team-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #073b4c;
+  margin-bottom: 2rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.team-member {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(17, 138, 178, 0.06);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+
+.team-member:hover {
+  box-shadow: 0 8px 32px rgba(6, 214, 160, 0.10);
+}
+
+.team-member img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 2px solid #06d6a0;
+}
+
+.team-member h3 {
+  color: #118ab2;
+  font-size: 1.15rem;
+  margin-bottom: 0.2rem;
+  font-weight: 700;
+}
+
+.team-member p {
+  color: #222;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 700px) {
+  .about-hero {
+    padding: 2rem 0.5rem 1.5rem 0.5rem;
+  }
+  .about-hero h1 {
+    font-size: 1.5rem;
+  }
+  .team-section {
+    padding: 0.5rem;
+  }
+  .team-grid {
+    gap: 1rem;
+  }
+  .team-member {
+    padding: 1.2rem 0.7rem;
+  }
+  .team-member img {
+    width: 56px;
+    height: 56px;
+  }
+}
