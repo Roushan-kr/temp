@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Learnify</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <!-- ...existing header/nav code... -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">Learnify</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Open navigation">&#9776;</button>
+      </nav>
+    </header>
+    <main>
+      <section class="contact-hero">
+        <h1>Contact Us</h1>
+        <p>Questions or feedback? Fill out the form below and we'll get back to you.</p>
+      </section>
+      <section class="contact-form-section">
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name*</label>
+            <input type="text" id="name" name="name" required />
+            <span class="error-message" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required />
+            <span class="error-message" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message*</label>
+            <textarea id="message" name="message" required></textarea>
+            <span class="error-message" id="messageError"></span>
+          </div>
+          <button type="submit" class="cta-btn">Send Message</button>
+        </form>
+        <div id="formSuccess" class="form-success" style="display:none;">
+          Thank you for contacting us! We'll respond soon.
+        </div>
+      </section>
+    </main>
+    <!-- ...existing footer code... -->
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 Learnify. All rights reserved.</p>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="../assets/main.js"></script>
+  </body>
+</html>
